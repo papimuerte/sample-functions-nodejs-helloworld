@@ -1,7 +1,7 @@
 packages:
   - name: sample
     environment:
-      LOG_DESTINATIONS: '[{"datadog":{"endpoint":"https://http-intake.logs.datadoghq.com","api_key":"5ba942daefc555b1921726e29b5a4803"}}]'
+      LOG_DESTINATIONS: ${LOG_DESTINATIONS}
     actions:
       - name: hello
         runtime: 'nodejs:default'
